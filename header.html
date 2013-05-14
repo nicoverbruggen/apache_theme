@@ -1,0 +1,69 @@
+	<head>
+		<!-- TITLE ATTRIBUTE -->
+		<title>Apache Root Folder</title>
+		<!-- MOBILE DEVICE SUPPORT -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<!-- INLINE STYLE (NO MESS OF HIDING ADDITIONAL FILES IN .htaccess) -->
+		<style type="text/css">
+		/******************************
+		INLINE STYLES BEGIN HERE
+		*****************************/
+		/* FONT FAMILY */
+		body{
+			font-family: "Helvetica", "Helvetica Neue";
+			width: 70%;
+			margin: auto;
+		}
+		/* TABLE */
+		tr, td, th
+		{
+			padding: 5px 10px;
+			text-align: left;
+		}
+		table{
+			font-size: 0.9em;
+			width: 100%;
+		}
+		/* LINKS */
+		a{
+			color: #333;
+		}
+		a:visited{
+			color: #777;
+		}
+		/* PARAGRAPHS */
+		p{
+			font-size: 0.75em;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		/* ALWAYS HIDE FILE DESCRIPTIONS (5th element as table header + data) */
+		th:nth-child(5){
+				display: none;
+		}
+		td:nth-child(5){
+				display: none;
+		}
+
+		/* MEDIA QUERIES FOR MOBILE */
+		@media screen and (min-width: 320px) and (max-width: 768px){
+			body{
+				width: 90%;
+			}
+			td, th{
+				font-size: 1.0em;
+			}
+			p{
+				font-size: 0.9em;
+			}
+		}
+		/******************************
+		INLINE STYLES END HERE
+		*****************************/
+		</style>
+	</head>
+	<body>
+		<h1>Apache Root Folder</h1>
+		<p>More information about this folder can be entered here, if preferred.</p><br/>
+		<!-- IF YOU WANT TO STYLE GENERATED CONTENT, USE DIV #generated -->
+		<div id="generated">
